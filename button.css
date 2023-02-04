@@ -1,0 +1,99 @@
+
+/* button underline animation style */
+
+.underline-anime,.underline-anime:visited,.underline-anime:hover,.underline-anime:active{
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+	position:relative;
+  transition:0.5s color ease;
+	text-decoration:none;
+}
+.underline-anime:hover{
+	color: var(--color-light);
+}
+.underline-anime.before:before,.underline-anime.after:after{
+  content: "";
+  transition:0.5s all ease;
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+  position:absolute;
+}
+.underline-anime.before:before{
+  top:-0.25em;
+}
+.underline-anime.after:after{
+  bottom:-0.25em;
+}
+.underline-anime.before:before,.underline-anime.after:after{
+  height:0.15rem;
+  width:0;
+  background: var(--color-light);
+}
+.underline-anime.first:after{
+  left:0;
+}
+
+.underline-anime.before:hover:before,.underline-anime.after:hover:after{
+  width:100%;
+}
+
+
+/* .tenth.before:before{
+  top:-0.25em;
+}
+.tenth.after:after{
+  bottom:-0.25em;
+}
+
+.square{
+  box-sizing:border-box;
+  margin-left:-0.4em;
+  position:relative;
+  overflow:hidden;
+}
+.square .underline-anime{
+  position:static;
+  padding:0.2em 1.5em;
+}
+.square:before,.square:after{
+  content: "";
+  box-sizing:border-box;
+  transition:0.25s all ease;
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+  position:absolute;
+  width:0.15rem;
+  height:0;
+  background: var(--color-light);
+}
+.square:before{
+  left:0;
+  bottom:-0.2em;
+}
+.square.individual:before{
+  transition-delay:0.6s;
+}
+.square:after{
+  right:0;
+  top:-0.2em;
+}
+.square.individual:after{
+  transition-delay:0.2s;
+}
+.square .underline-anime:before{
+  left:0;
+  transition:0.25s all ease;
+}
+.square .underline-anime:after{
+  right:0;
+  transition:0.25s all ease;
+}
+.square.individual .underline-anime:after{
+  transition:0.25s all ease 0.4s;
+}
+.square:hover:before,.square:hover:after{
+  height:calc(100% + 0.4em);
+}
+.square:hover .underline-anime:before,.square:hover .underline-anime:after{
+  width:100%;
+} */

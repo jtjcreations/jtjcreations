@@ -1,0 +1,20 @@
+.gallery-block{padding-bottom: 60px; padding-top: 60px;}
+.gallery-block .heading{margin-bottom: 50px; text-align: center;}
+
+.gallery-block .heading h1{font-weight: 300; font-size: 3rem; color: var(--color-secondary)}
+
+.gallery-block.cards-gallery h6{ color: var(--color-light); padding-bottom: 10px;}
+.gallery-block.cards-gallery .btn{color: var(--color-light);}
+.gallery-block.cards-gallery .btn:hover{color: var(--color-light);}
+.gallery-block.cards-gallery .btn:focus{outline: none !important; box-shadow: none;}
+.gallery-block.cards-gallery .card{ cursor: pointer; overflow: hidden; box-shadow: var(--box-shadow);}
+.gallery-block.cards-gallery .card img{box-shadow: 0px 2px 10px rgba(0,0,0,0.15);}
+.gallery-block.cards-gallery .card img:hover{transform: scale3d(1.03,1.03,1); transition: transform 1s ease-in-out;}
+.gallery-block.cards-gallery .card-body{text-align: center; background: var(--color-dark);}
+.gallery-block.cards-gallery .card-body p{font-size: 15px;}
+.gallery-block.cards-gallery a{color: var(--color-light); }
+.gallery-block.cards-gallery a:hover{text-decoration: none;}
+.gallery-block.cards-gallery  .card{
+	margin-bottom: 30px;
+	box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
+}

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+:root{
+    --bg-body: #1B1E23;
+    --color-primary: #DBC277;
+    --color-secondary: #CDB88D;
+    --color-light: #e2e8ec;
+    --color-dark: #1B1E23;
+    --background-gradient-dark: linear-gradient(145deg, #181b20, #1d2025);
+    --box-shadow: 20px 20px 60px #171a1e,-20px -20px 60px #1f2328;
+    --box-shadow-small: 2px 2px 6px #171a1e,-2px -2px 6px #1f2328;
+    --font-family: 'Montserrat', sans-serif;
+    --font-family-head: 'Cormorant Garamond', serif;
+}
+
+[data-theme="dark"]{
+    --bg-body: #f5f5f5;
+    --color-primary: #3166ac;
+    --color-secondary: #3A3560;
+    --color-light: #000000;
+    --color-dark: #F6FBFF;
+    --background-gradient-dark: linear-gradient(145deg, #dde2e6, #ffffff);
+    --box-shadow: 20px 20px 60px #d1d5d9,-20px -20px 60px #ffffff;;
+    --box-shadow-small: 2px 2px 6px #d1d5d9,-2px -2px 6px #ffffff;
+    --font-family: 'Montserrat', sans-serif;
+    --font-family-head: 'Crimson Text', serif;
+}
