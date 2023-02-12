@@ -101,7 +101,7 @@
 }
 
 .image-slider-link {
-  color: #c5c5c5;
+  color: #dbdbdb;
   margin-top: 1rem;
   font-size: 18px;
 }
@@ -109,7 +109,7 @@
 .image-slider-h6 {
   font-family: 'Cormorant Garamond', serif;
   font-size: 3rem;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 /* image slider style end*/

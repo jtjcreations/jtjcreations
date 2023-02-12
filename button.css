@@ -1,42 +1,50 @@
-
 /* button underline animation style */
 
-.underline-anime,.underline-anime:visited,.underline-anime:hover,.underline-anime:active{
-  -webkit-backface-visibility:hidden;
-          backface-visibility:hidden;
-	position:relative;
-  transition:0.5s color ease;
-	text-decoration:none;
+.underline-anime,
+.underline-anime:visited,
+.underline-anime:hover,
+.underline-anime:active {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: relative;
+  transition: 0.5s color ease;
+  text-decoration: none;
 }
-.underline-anime:hover{
-	color: var(--color-light);
+.underline-anime:hover {
+  color: var(--color-light);
 }
-.underline-anime.before:before,.underline-anime.after:after{
-  content: "";
-  transition:0.5s all ease;
-  -webkit-backface-visibility:hidden;
-          backface-visibility:hidden;
-  position:absolute;
+.underline-anime.before:before,
+.underline-anime.after:after {
+  content: '';
+  transition: 0.5s all ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
 }
-.underline-anime.before:before{
-  top:-0.25em;
+.underline-anime.before:before {
+  top: -0.25em;
 }
-.underline-anime.after:after{
-  bottom:-0.25em;
+.underline-anime.after:after {
+  bottom: -0.25em;
 }
-.underline-anime.before:before,.underline-anime.after:after{
-  height:0.15rem;
-  width:0;
+.underline-anime.before:before,
+.underline-anime.after:after {
+  height: 0.15rem;
+  width: 0;
   background: var(--color-light);
 }
-.underline-anime.first:after{
-  left:0;
+.underline-anime.first:after {
+  left: 0;
 }
 
-.underline-anime.before:hover:before,.underline-anime.after:hover:after{
-  width:100%;
+.underline-anime.before:hover:before,
+.underline-anime.after:hover:after {
+  width: 100%;
 }
 
+.image-slider-link:hover {
+  color: #fff;
+}
 
 /* .tenth.before:before{
   top:-0.25em;
