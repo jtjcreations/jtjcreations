@@ -27,7 +27,9 @@
   position: fixed;
   z-index: 2;
   width: 100%;
-  background-color: var(--bg-body);
+  background: var(--bg-body);
+  /* filter: blur(10px); */
+  transition: transform 0.4s ease-in-out;
 }
 
 .head-jtj a h3 {
@@ -86,6 +88,9 @@
 } */
 
 /* image slider style */
+.home-image-slider {
+  margin-top: 8vh;
+}
 
 .home-image-slider .carousel-item .carousel-caption {
   height: 60%;
