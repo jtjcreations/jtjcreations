@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JTJ Creations</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="img/jtj-dark.png">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="icon" href="/img/jtj.png">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -16,21 +19,26 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="imggallerystyle.css">
+    <link rel="stylesheet" href="css/imggallerystyle.css">
 
-    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="css/button.css">
 
-    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="css/variables.css">
+
+    <!-- scroll revel animations style -->
+    <link rel="stylesheet" type="text/css" href="scrollCue/scrollCue.css">
 
     <!-- font awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
   
     <header >
         <div class="row head-jtj" id="navBar">
             <div class="col-md-5 col-6 p-4">
-              <a href="index.html" style="text-decoration: none;"><img src="img/logo JTJ.png" width="auto" height="30" class="d-inline-block align-top" alt=""></a>
+              <!-- <a href="index.html" style="text-decoration: none;"><img src="img/jtj-dark.png" width="auto" height="50" class="d-inline-block align-centre" style="margin-left: 1.5em;" alt="logo"></a> -->
+              <a href="index.html" style="text-decoration: none;"><img src="img/logo JTJ nav.png" width="auto" height="30" class="d-inline-block align-top" alt=""></a>
             </div>
 
             <div class="col-md-7 col-6 my-auto top-bar">
@@ -111,8 +119,8 @@
     <section id="name-logo">
       <div class="container">
         <div class="row">
-          <div class="col-12 text-center pt-5">
-              <img src="./img/logo JTJ.png" class="img-fluid logo" alt="JTJ Cretions Logo">
+          <div class="col-12 text-center pt-5" data-cues="slideInLeft" data-duration="500">
+              <img src="./img/logo JTJ nav.png" class="img-fluid logo" alt="JTJ Cretions Logo">
               <p class="logo-p"><span style="color: var(--color-primary);">Photography & Editing, </span> Thalavoor, Kollam, Kerala</p>
               <br>
               <p class="logo-p"`>- Creating Wonderful Moments -</p>
@@ -135,27 +143,26 @@
     <section class="p-5" id="about">
     
       <div class="container about">
-        <div>
+        <div data-cues="slideInLeft">
           <h6 class="text-center sub-head">ABOUT</h6>
           <h1 class="text-center font-cormorant about-head">ABOUT US</h1>
         </div>
-        <div class="row">
+        <div class="row" data-cues="fadeIn" data-group="images" data-sort="random" data-duration=500>
           <div class="col-md-6">
             <img src="./img/about.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-md-6">
             <h1 class="about-desc-h1 font-cormorant">Hi there,<br> We are JTJ Creations,<br>A photography firm based in Kollam, Kerala</h1>
-            <p class="text-left pt-4 about-desc">
+            <p class="text-justify pt-4 about-desc">
                We capture your beautiful moments so that you can re-live the moments again and again.
                Every moment we live is a first time experience for us, a snapshot keeps those moments form running away. We are making photographs to understand what our lives mean to us.
                For us photography will never be a profession, it's always a passion which includes a lot of hardwork and skills. 
             </p>
-            <br><br>
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-12 col-lg-6">
                 <a href="#contact" class="about-button"><button class="btn" type="button">GET IN TOUCH <i class="fa-solid fa-angle-right"></i></button></a>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-12 col-lg-6">
                 <a class="btn about-icons" href="https://www.facebook.com/profile.php?id=100076379604525" role="button">
                   <i class="fa-brands fa-facebook-f"></i>
                 </a>
@@ -174,38 +181,38 @@
     
     <section class="gallery-block cards-gallery img-jtj" id="gallery">
       <div class="container gallery">
-        <div class="heading">
+        <div class="heading"  data-cues="slideInLeft" >
           <h6 class="sub-head">OUR PORTFOLIO</h6>
           <h1 class="font-cormorant">GALLERY</h1>
         </div>
-        <div class="row">
+        <div class="row" data-cues="fadeIn" data-duration=1000>
           
           <div class="col-md-6 col-lg-4">
             <div class="card border-0">
-              <a class="lightbox" href="albums.html"><img src="img/album.jpg" alt="Baptism Images" class="card-img-top"></a>
+              <a class="lightbox" href="gallery-links/albums.html"><img src="img/album.jpg" alt="Baptism Images" class="card-img-top"></a>
               <div class="card-body">
                 <h6>Albums & Editing</h6>
-                <a href="albums.html" class="btn underline-anime first after">Load more <i class="fa-solid fa-angle-right"></i></a>
+                <a href="gallery-links/albums.html" class="btn underline-anime first after">Load more <i class="fa-solid fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           
           <div class="col-md-6 col-lg-4">
             <div class="card border-0">
-              <a class="lightbox" href="events.html"><img src="img/events.jpg" alt="Weddding Images" class="card-img-top"></a>
+              <a class="lightbox" href="gallery-links/events.html"><img src="img/events.jpg" alt="Weddding Images" class="card-img-top"></a>
               <div class="card-body">
                 <h6>Latest Works & Events</h6>
-                <a href="events.html" class="btn underline-anime first after">Load more <i class="fa-solid fa-angle-right"></i></a>
+                <a href="gallery-links/events.html" class="btn underline-anime first after">Load more <i class="fa-solid fa-angle-right"></i></a>
               </div>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4">
             <div class="card border-0">
-              <a class="lightbox" href="nature.html"><img src="img/nature.jpg" alt="Nature Images" class="card-img-top"></a>
+              <a class="lightbox" href="gallery-links/nature.html"><img src="img/nature.jpg" alt="Nature Images" class="card-img-top"></a>
               <div class="card-body">
                 <h6>Nature & Wildlife</h6>
-                <a href="nature.html" class="btn underline-anime first after">Load more <i class="fa-solid fa-angle-right"></i></a>
+                <a href="gallery-links/nature.html" class="btn underline-anime first after">Load more <i class="fa-solid fa-angle-right"></i></a>
               </div>
             </div>
           </div>
@@ -216,12 +223,12 @@
   
     <section id="contact">
     
-        <div class="container contact"> 
-          <div class=" text-center">
+        <div class="container contact" > 
+          <div class=" text-center" data-cues="slideInLeft">
             <h6 class="text-center sub-head">GET IN TOUCH</h6>
             <h1 id="contact-h1" class="font-cormorant">CONTACT US</h1>
           </div>
-          <div class="row ">
+          <div class="row " data-cues="fadeIn" data-sort="random" data-duration=1000>
               <div class="col-md-5 contact-description">
                 <h2 class="contact-description-head">Book a session with us</h2>
                 <p class="contact-description-p">Just fill the form to start a discussion with us on how we can work together to capture the memories of your special day for you to cherish forever.</p>
@@ -229,10 +236,10 @@
                   Don't want to fill the form? Just scan the QR Code below or you can just e-mail us <br>
                 </p>
                 <div class="row">
-                  <div class="col-md-3">
-                    <img class="img-fluid img-responsive rounded" width="70px" height="auto" src="./img/WhatsApp-QR-code.png" alt="">
+                  <div class="col-12 col-lg-3">
+                    <img class="img-fluid img-responsive rounded" width="70px" height="auto" src="./img/WhatsApp-QR-code.png" alt="QR code">
                   </div>
-                  <div class="col-md-9">
+                  <div class="col-12 col-lg-9">
                     <a class="text-decoration-none contact-description-mail underline-anime first after" href="mailto:jtjcreations2020@gmail.com"><i class="fa-solid fa-envelope"></i>&nbsp; jtjcreations2020@gmail.com</a>
                     <br><br><a href="tel:+917594875686" class="contact-description-mail underline-anime first after"><i class="fa-solid fa-phone"></i> +91 7594875686</a>
                   </div>
@@ -335,7 +342,7 @@
   </div>
 
   <footer id="footer">
-    <div class="container-fluid footer">
+    <div class="container-fluid footer" data-cues="fadeIn" data-sort="random" data-duration=1000 >
       <div class="row">
         <div class="col-12">
           <p>
@@ -351,7 +358,7 @@
           <a href="https://www.instagram.com/jtjcreations_" class="footer-icons"><i class="fab fa-instagram"></i></a>
           <a href="https://wa.me/917594906242?text=" class="footer-icons"><i class="fa-brands fa-whatsapp"></i></a>
           <a href="mailto:jtjcreations2020@gmail.com" class="footer-icons"><i class="fa-solid fa-envelope"></i></a> <br><br>
-          <p>&copy; <script>document.write(new Date().getFullYear())</script>.All rights reserved.</p>
+          <p>&copy; <script>document.write(new Date().getFullYear())</script> JTJ Creations. All rights reserved.</p>
         </div>
       </div>
     </div>
@@ -367,8 +374,8 @@
       <div class="theme-switch-wrapper side-bar-icon">
         <label class="theme-switch" for="checkbox">
           <input type="checkbox" id="checkbox" />
-          <i class="fa-solid fa-cloud-moon" title="Dark Mode" id="light"></i>
-          <i class="fa-solid fa-sun" title="Light Mode" id="dark"></i>
+          <i class="fa-solid fa-cloud-moon" title="Dark Mode" id="moon"></i>
+          <i class="fa-solid fa-sun" title="Light Mode" id="sun"></i>
         </label>
       </div>
       <a href="https://www.facebook.com/profile.php?id=100076379604525">
@@ -411,5 +418,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     
     <script src="script.js"></script>
+
+    <!-- scroll revel animations script -->
+    <script type="text/javascript" src="scrollCue/scrollCue.min.js"></script>
+    <script>scrollCue.init();</script>
 </body>
 </html>

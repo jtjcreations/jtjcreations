@@ -87,6 +87,33 @@ function switchTheme(e) {
 
 toggleSwitch.addEventListener('change', switchTheme, false);
 
+// checks default system theme
+
+// const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+// if (prefersDarkScheme.matches) {
+//   document.documentElement.setAttribute('data-theme', 'light');
+//   toggleSwitch.checked = false;
+//   localStorage.setItem('theme', 'light');
+// } else {
+//   document.documentElement.setAttribute('data-theme', 'dark');
+//   toggleSwitch.checked = true;
+//   localStorage.setItem('theme', 'dark');
+// }
+
+// console.log(prefersDarkScheme.matches);
+// console.log(toggleSwitch.checked);
+
+// $(document).ready(function () {
+//   $('#light-mode').click(() => {
+//     $('#dark-mode').show(), $('#light-mode').hide();
+//   });
+
+//   $('#dark-mode').click(() => {
+//     $('#dark-mode').hide(), $('#light-mode').show();
+//   });
+// });
+
 // side social-bar toggele
 
 $(document).ready(function () {
@@ -96,15 +123,5 @@ $(document).ready(function () {
 
   $('#hide-sidebar').click(() => {
     $('#icon-side').hide(), $('#show-sidebar').show();
-  });
-});
-
-$(document).ready(function () {
-  $('#light-mode').click(() => {
-    $('#dark-mode').show(), $('#light-mode').hide();
-  });
-
-  $('#dark-mode').click(() => {
-    $('#dark-mode').hide(), $('#light-mode').show();
   });
 });
