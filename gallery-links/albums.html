@@ -34,51 +34,70 @@
     <link rel="stylesheet" href="../css/button.css" />
 
     <link rel="stylesheet" href="../css/variables.css" />
+
+    <link rel="stylesheet" href="../css/navbar.css" />
   </head>
   <body>
-    <header class="head-jtj">
-      <div class="row">
-        <div class="col-md-5 col-6 p-4">
+    <header id="header">
+      <div class="container-fluid nav-container">
+        <div class="logo">
           <a href="index.html" style="text-decoration: none"
             ><img
               src="../img/logo JTJ nav.png"
               width="auto"
               height="30"
-              class="d-inline-block align-top"
-              alt="album image"
+              class=""
+              alt=""
           /></a>
         </div>
-
-        <div class="col-md-7 col-6 my-auto top-bar">
-          <nav class="navbar navbar-expand-lg navbar-light">
-            <button
-              class="navbar-toggler ml-auto"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="ham-icon"><i class="fa-solid fa-bars"></i></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ml-auto nav-jtj">
-                <li class="nav-item ml-auto underline-anime first after">
-                  <a class="nav-link" href="../index.html#home">HOME</a>
+        <div class="navbar-nav">
+          <input
+            type="checkbox"
+            id="checkbox3"
+            class="checkbox3 visuallyHidden ham-btn"
+          />
+          <label for="checkbox3">
+            <div class="hamburger hamburger3">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+              <span class="bar bar3"></span>
+              <span class="bar bar4"></span>
+            </div>
+          </label>
+          <div class="navbar" id="navbar">
+            <nav>
+              <ul class="nav-list">
+                <li class="nav-item">
+                  <a
+                    href="../index.html"
+                    class="btn underline-anime first after nav-link"
+                    >Home</a
+                  >
                 </li>
-                <li class="nav-item ml-auto underline-anime first after">
-                  <a class="nav-link" href="../index.html#about">ABOUT</a>
+                <li class="nav-item">
+                  <a
+                    href="../index.html#about"
+                    class="btn underline-anime first after nav-link"
+                    >About</a
+                  >
                 </li>
-                <li class="nav-item ml-auto underline-anime first after">
-                  <a class="nav-link" href="../index.html#gallery">GALLERY</a>
+                <li class="nav-item">
+                  <a
+                    href="../index.html#gallery"
+                    class="btn underline-anime first after nav-link"
+                    >Gallery</a
+                  >
                 </li>
-                <li class="nav-item ml-auto underline-anime first after">
-                  <a class="nav-link" href="../index.html#contact">CONTACT</a>
+                <li class="nav-item">
+                  <a
+                    href="../index.html#contact"
+                    class="btn underline-anime first after nav-link"
+                    >Contact</a
+                  >
                 </li>
               </ul>
-            </div>
-          </nav>
+            </nav>
+          </div>
         </div>
       </div>
     </header>

@@ -2,7 +2,7 @@
 //Get the button
 var mybutton = document.getElementById('goto-top');
 var sidediv = document.getElementById('side-bar');
-const navBar = document.getElementById('navBar');
+const navBar = document.getElementById('header');
 
 // When the user scrolls down 500px from the top of the document, show the button
 window.onscroll = function () {
@@ -11,7 +11,7 @@ window.onscroll = function () {
 
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    navBar.style.transform = 'translateY(-300px)';
+    navBar.style.transform = 'translateY(-60rem)';
   } else {
     navBar.style.transform = 'translateY(0px)';
   }

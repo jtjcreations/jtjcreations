@@ -25,6 +25,8 @@
 
     <link rel="stylesheet" href="css/variables.css">
 
+    <link rel="stylesheet" href="css/navbar.css">
+
     <!-- scroll revel animations style -->
     <link rel="stylesheet" type="text/css" href="scrollCue/scrollCue.css">
 
@@ -34,10 +36,11 @@
 </head>
 <body>
   
-    <header >
-        <div class="row head-jtj" id="navBar">
+    <!-- <header class="head-jtj" id="header">
+        <div class="container-fluid">
+          <div class="row">
             <div class="col-md-5 col-6 p-4">
-              <!-- <a href="index.html" style="text-decoration: none;"><img src="img/jtj-dark.png" width="auto" height="50" class="d-inline-block align-centre" style="margin-left: 1.5em;" alt="logo"></a> -->
+              <a href="index.html" style="text-decoration: none;"><img src="img/jtj-dark.png" width="auto" height="50" class="d-inline-block align-centre" style="margin-left: 1.5em;" alt="logo"></a> 
               <a href="index.html" style="text-decoration: none;"><img src="img/logo JTJ nav.png" width="auto" height="30" class="d-inline-block align-top" alt=""></a>
             </div>
 
@@ -67,7 +70,57 @@
             </div>
 
         </div>
-    </header>
+        </div>
+    </header> -->
+
+  <header id="header">
+      <div class="container-fluid nav-container">
+        <div class="logo">
+          <a href="index.html" style="text-decoration: none"
+            ><img
+              src="img/logo JTJ nav.png"
+              width="auto"
+              height="30"
+              class=""
+              alt=""
+          /></a>
+        </div>
+        <div class="navbar-nav">
+          <input
+            type="checkbox"
+            id="checkbox3"
+            class="checkbox3 visuallyHidden ham-btn"
+          />
+          <label for="checkbox3">
+            <div class="hamburger hamburger3">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+              <span class="bar bar3"></span>
+              <span class="bar bar4"></span>
+            </div>
+          </label>
+          <div class="navbar" id="navbar">
+            <nav>
+              <ul class="nav-list">
+                <li class="nav-item">
+                  <a href="#home" class="btn underline-anime first after nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#about" class="btn underline-anime first after nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#gallery" class="btn underline-anime first after nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#contact" class="btn underline-anime first after nav-link">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+  </header>
+
 
   <div class="HomePage col-12" id="home">
     <section class="p-4 ">
@@ -267,37 +320,63 @@
                                   <div class="controls">
                                       <div class="row">
                                           <div class="col-md-6">
-                                              <div class="form-group"> <label for="form_name">Firstname *</label> <input id="form_name" minlength="3" type="text" name="name" class="form-control" placeholder="Firstname" required="required" data-error="Firstname is required." onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)"> </div>
+                                              <div class="form-group">
+                                                 <label for="form_name">Firstname *</label> 
+                                                 <input id="form_name" type="text" name="name" class="form-control" placeholder="Firstname" required="required" onkeyup="validateFirstname()">
+                                                 <span class="error-span" id="firstname-error"></span>
+                                              </div>
                                           </div>
                                           <div class="col-md-6">
-                                              <div class="form-group"> <label for="form_lastname">Lastname *</label> <input id="form_lastname"  type="text" name="surname" class="form-control" placeholder="Lastname" required="required" data-error="Lastname is required." onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)"> </div>
+                                              <div class="form-group">
+                                                <label for="form_lastname">Lastname *</label>
+                                                <input id="form_lastname"  type="text" name="surname" class="form-control" placeholder="Lastname" required="required" onkeyup="validateLastname()">
+                                                <span class="error-span" id="lastname-error"></span>
+                                              </div>
                                           </div>
                                       </div>
                                       <div class="row">
                                           <div class="col-md-6">
-                                              <div class="form-group"> <label for="form_email">Email *</label> <input id="form_email" type="email" name="email" class="form-control" placeholder="you@example.com" required="required" data-error="Valid email is required."> </div>
+                                              <div class="form-group">
+                                                 <label for="form_email">Email *</label> 
+                                                 <input id="form_email" type="email" name="email" class="form-control" placeholder="you@example.com" required="required"
+                                                 onkeyup="validateEmail()"> 
+                                                 <span class="error-span" id="email-error"></span>
+                                              </div>
                                           </div>
                                           <div class="col-md-6">
                                               <div class="form-group"> <label for="form_need">Select a service *</label> 
-                                                <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                                <select id="form_need" name="need" class="form-control" required="required"
+                                                onclick="validateService()">
                                                       <option value="" selected disabled>--Select Your Need--</option>
                                                       <option>Book an Event</option>
                                                       <option>Pricing & Packages</option>
                                                       <option>Equipments Used</option>
                                                       <option>Other</option>
-                                                  </select> </div>
+                                                  </select> 
+                                                  <span class="error-span" id="service-error"></span>
+                                                </div>
                                           </div>
                                       </div>
                                       <div class="row">
                                         <div class="col-md-6">
-                                            <div class="form-group"> <label for="form_mobile">Mobile No*</label> <input id="form_mobile" minlength="10" type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" name="mobile" class="form-control" placeholder="888 888 8888 " required="required" data-error="Mobile No is required."> </div>
+                                            <div class="form-group">
+                                                <label for="form_mobile">Mobile No*</label>
+                                                <input id="form_mobile" type="tel" name="mobile" class="form-control" placeholder="+91 888 888 8888 " required="required" onkeyup="validateMobile()">
+                                                <span class="error-span" id="mobile-error"></span>
+                                              </div>
                                         </div>
                                     </div>
                                       <div class="row">
                                           <div class="col-md-12">
-                                              <div class="form-group"> <label for="form_message">Message *</label> <textarea id="form_message" name="message" class="form-control" placeholder="Write your message here." rows="4" required="required" data-error="Please, leave us a message."></textarea> </div>
+                                              <div class="form-group"> 
+                                                <label for="form_message">Message *</label>
+                                                <textarea id="form_message" name="message" class="form-control" placeholder="Write your message here." rows="4" required="required" onkeyup="validateMessage()"></textarea> 
+                                                <span class="error-span" id="message-error"></span>
+                                              </div>
                                           </div>
-                                          <div class="col-md-12"> <span><button type="submit" class="btn btn-send pt-2 btn-block ">Send Message <i class="fa-regular fa-paper-plane"></i></span></button> </div>
+                                          <div class="col-md-12"> <span><button type="submit" id="submit-btn" class="btn btn-send pt-2 btn-block " onclick=" return validateSubmit()">Send Message <i class="fa-regular fa-paper-plane"></i></span></button> 
+                                            <span class="error-span" id="submit-error"></span>
+                                          </div>
                                       </div>
                                   </div>
                               </form>
@@ -417,7 +496,9 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     
-    <script src="script.js"></script>
+    <script src="js/contact.js"></script>
+
+    <script src="js/script.js"></script>
 
     <!-- scroll revel animations script -->
     <script type="text/javascript" src="scrollCue/scrollCue.min.js"></script>
