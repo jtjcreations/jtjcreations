@@ -13,10 +13,10 @@
 
 .nav-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 40% 60%;
   min-height: 10vh;
   align-items: center;
-  background: var(--color-dark);
+  background: var(--bg-body);
 }
 
 .navbar,
@@ -26,7 +26,7 @@
 
 #header .navbar-nav .navbar {
   justify-content: end;
-  padding-right: 4rem;
+  padding-right: 1rem;
   position: relative;
 }
 

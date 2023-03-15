@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JTJ Creations</title>
-    
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JTJ Creations</title>
 
-    <link rel="icon" href="img/jtj-dark.png">
+  <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- favicon -->
+  <link rel="icon" media="(prefers-color-scheme: light)" href="img/jtj dark.png">
+  <link rel="icon" media="(prefers-color-scheme: dark)" href="img/jtj.png">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="css/imggallerystyle.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
 
-    <link rel="stylesheet" href="css/button.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/imggallerystyle.css">
 
-    <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/button.css">
 
-    <!-- scroll revel animations style -->
-    <link rel="stylesheet" type="text/css" href="scrollCue/scrollCue.css">
+  <link rel="stylesheet" href="css/variables.css">
 
-    <!-- font awsome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/navbar.css">
+
+  <!-- scroll revel animations style -->
+  <link rel="stylesheet" type="text/css" href="scrollCue/scrollCue.css">
+
+  <!-- font awsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
 </head>
+
 <body>
-  
-    <!-- <header class="head-jtj" id="header">
+
+  <!-- <header class="head-jtj" id="header">
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-5 col-6 p-4">
@@ -74,127 +84,161 @@
     </header> -->
 
   <header id="header">
-      <div class="container-fluid nav-container">
-        <div class="logo">
-          <a href="index.html" style="text-decoration: none"
-            ><img
-              src="img/logo JTJ nav.png"
-              width="auto"
-              height="30"
-              class=""
-              alt=""
-          /></a>
-        </div>
-        <div class="navbar-nav">
-          <input
-            type="checkbox"
-            id="checkbox3"
-            class="checkbox3 visuallyHidden ham-btn"
-          />
-          <label for="checkbox3">
-            <div class="hamburger hamburger3">
-              <span class="bar bar1"></span>
-              <span class="bar bar2"></span>
-              <span class="bar bar3"></span>
-              <span class="bar bar4"></span>
-            </div>
-          </label>
-          <div class="navbar" id="navbar">
-            <nav>
-              <ul class="nav-list">
-                <li class="nav-item">
-                  <a href="#home" class="btn underline-anime first after nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#about" class="btn underline-anime first after nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#gallery" class="btn underline-anime first after nav-link">Gallery</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#contact" class="btn underline-anime first after nav-link">Contact</a>
-                </li>
-              </ul>
-            </nav>
+    <div class="container-fluid nav-container">
+      <div class="logo">
+        <a href="index.html" style="text-decoration: none"><img src="img/logo JTJ nav.png" width="auto" height="30"
+            class="" alt="" /></a>
+      </div>
+      <div class="navbar-nav">
+        <input type="checkbox" id="checkbox3" class="checkbox3 visuallyHidden ham-btn" />
+        <label for="checkbox3">
+          <div class="hamburger hamburger3">
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
+            <span class="bar bar4"></span>
           </div>
+        </label>
+        <div class="navbar" id="navbar">
+          <nav>
+            <ul class="nav-list">
+              <li class="nav-item btn underline-anime first after">
+                <a href="#home" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item btn underline-anime first after">
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item btn underline-anime first after">
+                <a href="#gallery" class="nav-link">Gallery</a>
+              </li>
+              <li class="nav-item btn underline-anime first after">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
+    </div>
   </header>
 
 
   <div class="HomePage col-12" id="home">
-    <section class="p-4 ">
-    <div class="row">
-      <div class="home-image-slider">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="img/slider1.jpg" alt="First slide">
-              <div class="carousel-caption  d-md-block">
-                <p class="image-slider-p">CAPTURING MEMORIES</p>
-                <h6 class="image-slider-h6 d-md-block">Moments of Love</h6>
-                <a href="#gallery" class="image-slider-link underline-anime first after">Explore Our Work <i class="fa-solid fa-angle-right"></i></a>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="img/slider2.JPG" alt="Second slide">
-              <div class="carousel-caption  d-md-block">
-                <p class="image-slider-p">CAPTURING MEMORIES</p>
-                <h6 class="image-slider-h6 d-md-block">Moments of Love</h6>
-                <a href="#gallery" class="image-slider-link underline-anime first after">Explore Our Work <i class="fa-solid fa-angle-right"></i></a>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="img/slider5.jpg" alt="Third slide">
-              <div class="carousel-caption d-md-block">
-                <p class="image-slider-p">CAPTURING MEMORIES</p>
-                <h6 class="image-slider-h6 d-md-block">Moments of Love</h6>
-                <a href="#gallery" class="image-slider-link underline-anime first after">Explore Our Work <i class="fa-solid fa-angle-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <i class="fas fa-chevron-left"></i>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <i class="fas fa-chevron-right"></i>
-          </a>
-        </div>
-    </div>
-    </div>
-    </section>
-
-    <section id="name-logo">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center pt-5" data-cues="slideInLeft" data-duration="500">
-              <img src="./img/logo JTJ nav.png" class="img-fluid logo" alt="JTJ Cretions Logo">
-              <p class="logo-p"><span style="color: var(--color-primary);">Photography & Editing, </span> Thalavoor, Kollam, Kerala</p>
-              <br>
-              <p class="logo-p"`>- Creating Wonderful Moments -</p>
-              <div class="pt-5 all-icons">
-                <a class="btn social_icon" href="https://www.facebook.com/profile.php?id=100076379604525" role="button">
+    <section class=" ">
+      <div class="row">
+        <div class="home-image-slider">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-touch="true">
+            <ol class="carousel-indicators">
+              <li class="carousel-slide-btn" data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+              </li>
+              <li class="carousel-slide-btn" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li class="carousel-slide-btn" data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <span class="carousel-icons-span d-none d-sm-inline-block">
+                <a class="btn carousel_icon" href="https://www.facebook.com/profile.php?id=100076379604525"
+                  role="button">
                   <i class="fa-brands fa-facebook-f"></i>
                 </a>
-                <a class="btn social_icon" href="https://www.instagram.com/jtjcreations_" role="button">
+                <a class="btn carousel_icon" href="https://www.instagram.com/jtjcreations_" role="button">
                   <i class="fa-brands fa-instagram"></i>
                 </a>
-                <a class="btn social_icon" href="https://www.youtube.com/channel/UCSGZLWjrl5dWbQuM_GJ0-9g" role="button">
+                <a class="btn carousel_icon" href="https://www.youtube.com/channel/UCSGZLWjrl5dWbQuM_GJ0-9g"
+                  role="button">
                   <i class="fa-brands fa-youtube"></i>
                 </a>
+              </span>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="img/slider1.jpg" alt="First slide">
+                <div class="carousel-caption  d-md-block">
+                  <p class="image-slider-p">CAPTURING MEMORIES</p>
+                  <h6 class="image-slider-h6 d-md-block">Moments of Love</h6>
+                  <a href="#gallery" class="image-slider-link underline-anime first after">Explore Our Work <i
+                      class="fa-solid fa-angle-right"></i></a>
+                </div>
               </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/slider2.JPG" alt="Second slide">
+                <div class="carousel-caption  d-md-block">
+                  <p class="image-slider-p">CAPTURING MEMORIES</p>
+                  <h6 class="image-slider-h6 d-md-block">Moments of Love</h6>
+                  <a href="#gallery" class="image-slider-link underline-anime first after">Explore Our Work <i
+                      class="fa-solid fa-angle-right"></i></a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/slider5.jpg" alt="Third slide">
+                <div class="carousel-caption d-md-block">
+                  <p class="image-slider-p">CAPTURING MEMORIES</p>
+                  <h6 class="image-slider-h6 d-md-block">Moments of Love</h6>
+                  <a href="#gallery" class="image-slider-link underline-anime first after">Explore Our Work <i
+                      class="fa-solid fa-angle-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <i class="fas fa-chevron-left"></i>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <i class="fas fa-chevron-right"></i>
+            </a>
           </div>
         </div>
       </div>
     </section>
-  
+
+    <section id="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="hero-container">
+              <p>WELCOME TO OUR WORLD</p>
+              <h1 class="font-cormorant hero-name-span">
+                Let's tell your story together.
+              </h1>
+              <p>We are JTJ Creations, a photography firm to capture your beautiful moments. Every moment lasts for a
+                second but gives a memory that is cherished forever. No
+                story lives unless
+                someone wants to listen. The stories we love best do live in us forever.</p>
+              <a href="#contact" class="book-now">BOOK NOW <i class="fa-solid fa-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="col-md-5 d-flex justify-content-around">
+            <div class="hero-logo">
+              <img src="img/jtj.png" alt="Logo JTJ Creations">
+            </div>
+          </div>
+        </div>
+        <div class="row hero-icons-row" data-cues="slideInLeft">
+          <div class="col-md-12 col-lg-6">
+            <h6>FIND US</h6>
+            <div class="all-icons software-icons-container">
+              <a class="btn social_icon" href="https://www.facebook.com/profile.php?id=100076379604525" role="button">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a class="btn social_icon" href="https://www.instagram.com/jtjcreations_" role="button">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a class="btn social_icon" href="https://www.youtube.com/channel/UCSGZLWjrl5dWbQuM_GJ0-9g" role="button">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6">
+            <h6>BEST SKILLS ON</h6>
+            <div class="software-icons-container">
+              <span><img class="software-icon" src="test files/icons/photoshop.png" alt=""></span>
+              <span><img class="software-icon" src="test files/icons/Illustrator.png" alt=""></span>
+              <span><img class="software-icon" src="test files/icons/lightroom.png" alt=""></span>
+              <span><img class="software-icon" src="test files/icons/premierepro.png" alt=""></span>
+              <span><img class="software-icon" src="test files/icons/filmora.png" alt=""></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="p-5" id="about">
-    
+
       <div class="container about">
         <div data-cues="slideInLeft">
           <h6 class="text-center sub-head">ABOUT</h6>
@@ -205,15 +249,19 @@
             <img src="./img/about.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-md-6">
-            <h1 class="about-desc-h1 font-cormorant">Hi there,<br> We are JTJ Creations,<br>A photography firm based in Kollam, Kerala</h1>
-            <p class="text-justify pt-4 about-desc">
-               We capture your beautiful moments so that you can re-live the moments again and again.
-               Every moment we live is a first time experience for us, a snapshot keeps those moments form running away. We are making photographs to understand what our lives mean to us.
-               For us photography will never be a profession, it's always a passion which includes a lot of hardwork and skills. 
+            <h1 class="about-desc-h1 font-cormorant">Hi there,<br> We are JTJ Creations,<br>A photography firm based in
+              Kollam, Kerala</h1>
+            <p class=" pt-4 about-desc">
+              We capture your beautiful moments so that you can re-live the moments again and again.
+              Every moment we live is a first time experience for us, a snapshot keeps those moments form running away.
+              We are making photographs to understand what our lives mean to us.
+              For us photography will never be a profession, it's always a passion which includes a lot of hardwork and
+              skills.
             </p>
             <div class="row">
               <div class="col-md-12 col-lg-6">
-                <a href="#contact" class="about-button"><button class="btn" type="button">GET IN TOUCH <i class="fa-solid fa-angle-right"></i></button></a>
+                <a href="#contact" class="about-button"><button class="btn" type="button">GET IN TOUCH <i
+                      class="fa-solid fa-angle-right"></i></button></a>
               </div>
               <div class="col-md-12 col-lg-6">
                 <a class="btn about-icons" href="https://www.facebook.com/profile.php?id=100076379604525" role="button">
@@ -231,14 +279,63 @@
         </div>
       </div>
     </section>
-    
+
     <section class="gallery-block cards-gallery img-jtj" id="gallery">
       <div class="container gallery">
-        <div class="heading"  data-cues="slideInLeft" >
+        <div class="heading" data-cues="slideInLeft">
           <h6 class="sub-head">OUR PORTFOLIO</h6>
           <h1 class="font-cormorant">GALLERY</h1>
         </div>
-        <div class="row" data-cues="fadeIn" data-duration=1000>
+
+        <div class="row gallery-row" data-cues="slideInLeft">
+          <div class="col-md-5 col-lg-4">
+            <a class="lightbox" href="gallery-links/albums.html"><img src="img/album.jpg" alt="Baptism Images"
+                class="card-img-top"></a>
+          </div>
+          <div class="col-md-7 col-lg-8">
+            <h3 class="font-cormorant gallery-h3">Album & Editing</h3>
+            <p class="gallery-p">When a moment in front of me appears to be particularly special, whether it be by
+              beauty or experience, I capture it. I usually find a reason to justify taking that photo - symmetry, or
+              color or contrast - and it's my hope that my photography sheds light onto what I see and do on a daily
+              basis.</p>
+            <a href="gallery-links/albums.html" class="gallery-btn btn underline-anime first after">Load more Images <i
+                class="fa-solid fa-angle-right"></i></a>
+          </div>
+        </div>
+
+        <div class="row gallery-row" data-cues="slideInRight">
+          <div class="col-md-7 col-lg-8 order-2">
+            <h3 class="font-cormorant gallery-h3">Latest Works & Events</h3>
+            <p class="gallery-p">The golden rule is work fast. As for framing, composition, focus – this is no time to
+              start asking yourself questions: you just have to trust your intuition and the sharpness of your
+              reflexes.Imagination is the beginning of creation. You imagine what you desire, you will what you imagine,
+              and at last, you create what you will</p>
+            <a href="gallery-links/events.html" class="gallery-btn btn underline-anime first after">Load more Images <i
+                class="fa-solid fa-angle-right"></i></a>
+          </div>
+          <div class="col-md-5 col-lg-4 order-md-2">
+            <a class="lightbox" href="gallery-links/events.html"><img src="img/events.jpg" alt="Weddding Images"
+                class="card-img-top"></a>
+          </div>
+        </div>
+
+        <div class="row gallery-row" data-cues="slideInLeft">
+          <div class="col-md-5 col-lg-4">
+            <a class="lightbox" href="gallery-links/nature.html"><img src="img/nature.jpg" alt="Nature Images"
+                class="card-img-top"></a>
+          </div>
+          <div class="col-md-7 col-lg-8">
+            <h3 class="font-cormorant gallery-h3">Nature & Wildlife</h3>
+            <p class="gallery-p">The goal of life is to make your heartbeat match the beat of the universe, to match
+              your nature with Nature. In nature, nothing is perfect and everything is perfect. This curious world we
+              inhabit is more wonderful than convenient; more beautiful than it is useful; it is more to be admired and
+              enjoyed than used.</p>
+            <a href="gallery-links/nature.html" class="gallery-btn btn underline-anime first after">Load more Images <i
+                class="fa-solid fa-angle-right"></i></a>
+          </div>
+        </div>
+
+        <!-- <div class="row" data-cues="fadeIn" data-duration=1000>
           
           <div class="col-md-6 col-lg-4">
             <div class="card border-0">
@@ -269,130 +366,172 @@
               </div>
             </div>
           </div>
-        </div>
-        
+        </div> -->
+
       </div>
     </section>
-  
-    <section id="contact">
-    
-        <div class="container contact" > 
-          <div class=" text-center" data-cues="slideInLeft">
-            <h6 class="text-center sub-head">GET IN TOUCH</h6>
-            <h1 id="contact-h1" class="font-cormorant">CONTACT US</h1>
-          </div>
-          <div class="row " data-cues="fadeIn" data-sort="random" data-duration=1000>
-              <div class="col-md-5 contact-description">
-                <h2 class="contact-description-head">Book a session with us</h2>
-                <p class="contact-description-p">Just fill the form to start a discussion with us on how we can work together to capture the memories of your special day for you to cherish forever.</p>
-                <p class="contact-description-p">
-                  Don't want to fill the form? Just scan the QR Code below or you can just e-mail us <br>
-                </p>
-                <div class="row">
-                  <div class="col-12 col-lg-3">
-                    <img class="img-fluid img-responsive rounded" width="70px" height="auto" src="./img/WhatsApp-QR-code.png" alt="QR code">
-                  </div>
-                  <div class="col-12 col-lg-9">
-                    <a class="text-decoration-none contact-description-mail underline-anime first after" href="mailto:jtjcreations2020@gmail.com"><i class="fa-solid fa-envelope"></i>&nbsp; jtjcreations2020@gmail.com</a>
-                    <br><br><a href="tel:+917594875686" class="contact-description-mail underline-anime first after"><i class="fa-solid fa-phone"></i> +91 7594875686</a>
-                  </div>
-                </div>
-                <div class="contact-follow">
-                  <h3>Follow Us</h3>
-                  <div class="pt-2 all-icons contact-icons">
-                    <a class="btn social_icon" href="https://www.facebook.com/profile.php?id=100076379604525" role="button">
-                      <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                    <a class="btn social_icon" href="https://www.instagram.com/jtjcreations_" role="button">
-                      <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a class="btn social_icon" href="https://www.youtube.com/channel/UCSGZLWjrl5dWbQuM_GJ0-9g" role="button">
-                      <i class="fa-brands fa-youtube"></i>
-                    </a>
-                  </div>
+
+    <!-- <section id="testimonial">
+      <div class="testimonial-container">
+        <div class="container">
+          <div class="row testimonials">
+            <div class="col-md-4">
+              <div class="testimonial-card">
+                <img class="rounded-circle" height="100px" width="auto" src="img/nature.jpg" alt="">
+                <div class="testimonial-text">
+                  <h5 class="text-center pt-4">Name</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur facilis numquam sint minima,
+                  </p>
                 </div>
               </div>
-              <div class="col-md-7">
-                  <div class="card mt-2 p-4 contact-card">
-                      <div class="card-body">
-                          
-                              <form id="contact-form" role="form" action="">
-                                  <div class="controls">
-                                      <div class="row">
-                                          <div class="col-md-6">
-                                              <div class="form-group">
-                                                 <label for="form_name">Firstname *</label> 
-                                                 <input id="form_name" type="text" name="name" class="form-control" placeholder="Firstname" required="required" onkeyup="validateFirstname()">
-                                                 <span class="error-span" id="firstname-error"></span>
-                                              </div>
-                                          </div>
-                                          <div class="col-md-6">
-                                              <div class="form-group">
-                                                <label for="form_lastname">Lastname *</label>
-                                                <input id="form_lastname"  type="text" name="surname" class="form-control" placeholder="Lastname" required="required" onkeyup="validateLastname()">
-                                                <span class="error-span" id="lastname-error"></span>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <div class="row">
-                                          <div class="col-md-6">
-                                              <div class="form-group">
-                                                 <label for="form_email">Email *</label> 
-                                                 <input id="form_email" type="email" name="email" class="form-control" placeholder="you@example.com" required="required"
-                                                 onkeyup="validateEmail()"> 
-                                                 <span class="error-span" id="email-error"></span>
-                                              </div>
-                                          </div>
-                                          <div class="col-md-6">
-                                              <div class="form-group"> <label for="form_need">Select a service *</label> 
-                                                <select id="form_need" name="need" class="form-control" required="required"
-                                                onclick="validateService()">
-                                                      <option value="" selected disabled>--Select Your Need--</option>
-                                                      <option>Book an Event</option>
-                                                      <option>Pricing & Packages</option>
-                                                      <option>Equipments Used</option>
-                                                      <option>Other</option>
-                                                  </select> 
-                                                  <span class="error-span" id="service-error"></span>
-                                                </div>
-                                          </div>
-                                      </div>
-                                      <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="form_mobile">Mobile No*</label>
-                                                <input id="form_mobile" type="tel" name="mobile" class="form-control" placeholder="+91 888 888 8888 " required="required" onkeyup="validateMobile()">
-                                                <span class="error-span" id="mobile-error"></span>
-                                              </div>
-                                        </div>
-                                    </div>
-                                      <div class="row">
-                                          <div class="col-md-12">
-                                              <div class="form-group"> 
-                                                <label for="form_message">Message *</label>
-                                                <textarea id="form_message" name="message" class="form-control" placeholder="Write your message here." rows="4" required="required" onkeyup="validateMessage()"></textarea> 
-                                                <span class="error-span" id="message-error"></span>
-                                              </div>
-                                          </div>
-                                          <div class="col-md-12"> <span><button type="submit" id="submit-btn" class="btn btn-send pt-2 btn-block " onclick=" return validateSubmit()">Send Message <i class="fa-regular fa-paper-plane"></i></span></button> 
-                                            <span class="error-span" id="submit-error"></span>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </form>
-                          
-                      </div>
-                  </div> <!-- /.8 -->
-              </div> <!-- /.row-->
+            </div>
+            <div class="col-md-4">
+              <div class="testimonial-card">
+                <img class="rounded-circle" height="100px" width="auto" src="img/nature.jpg" alt="">
+                <div class="testimonial-text">
+                  <h5 class="text-center pt-4">Name</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur facilis numquam sint minima,
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="testimonial-card">
+                <img class="rounded-circle" height="100px" width="auto" src="img/nature.jpg" alt="">
+                <div class="testimonial-text">
+                  <h5 class="text-center pt-4">Name</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur facilis numquam sint minima,
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section id="contact">
+
+      <div class="container contact">
+        <div class=" text-center" data-cues="slideInLeft">
+          <h6 class="text-center sub-head">GET IN TOUCH</h6>
+          <h1 id="contact-h1" class="font-cormorant">CONTACT US</h1>
+        </div>
+        <div class="row " data-cues="fadeIn" data-sort="random" data-duration=1000>
+          <div class="col-md-5 contact-description">
+            <h2 class="contact-description-head">Book a session with us</h2>
+            <p class="contact-description-p">Just fill the form to start a discussion with us on how we can work
+              together to capture the memories of your special day for you to cherish forever.</p>
+            <p class="contact-description-p">
+              Don't want to fill the form? Just scan the QR Code below or you can just e-mail us <br>
+            </p>
+            <div class="row">
+              <div class="col-12 col-lg-3">
+                <img class="img-fluid img-responsive rounded" width="70px" height="auto"
+                  src="./img/WhatsApp-QR-code.png" alt="QR code">
+              </div>
+              <div class="col-12 col-lg-9">
+                <a class="text-decoration-none contact-description-mail underline-anime first after"
+                  href="mailto:jtjcreations2020@gmail.com"><i class="fa-solid fa-envelope"></i>&nbsp;
+                  jtjcreations2020@gmail.com</a>
+                <br><br><a href="tel:+917594875686" class="contact-description-mail underline-anime first after"><i
+                    class="fa-solid fa-phone"></i> +91 7594875686</a>
+              </div>
+            </div>
+            <div class="contact-follow">
+              <h3>Follow Us</h3>
+              <div class="pt-2   contact-icons">
+                <a class="btn social_icon" href="https://www.facebook.com/profile.php?id=100076379604525" role="button">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a class="btn social_icon" href="https://www.instagram.com/jtjcreations_" role="button">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a class="btn social_icon" href="https://www.youtube.com/channel/UCSGZLWjrl5dWbQuM_GJ0-9g"
+                  role="button">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="card mt-2 p-4 contact-card">
+              <div class="card-body">
+
+                <form id="contact-form" role="form" action="">
+                  <div class="controls">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_name">Name *</label>
+                          <input id="form_name" type="text" name="name" class="form-control" placeholder="Name"
+                            required="required" onkeyup="validateName()">
+                          <span class="error-span" id="name-error"></span>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_mobile">Mobile No*</label>
+                          <input id="form_mobile" type="tel" name="mobile" class="form-control"
+                            placeholder="+91 888 888 8888 " required="required" onkeyup="validateMobile()">
+                          <span class="error-span" id="mobile-error"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_email">Email *</label>
+                          <input id="form_email" type="email" name="email" class="form-control"
+                            placeholder="you@example.com" required="required" onkeyup="validateEmail()">
+                          <span class="error-span" id="email-error"></span>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group"> <label for="form_need">Select a service *</label>
+                          <select id="form_need" name="need" class="form-control" required="required"
+                            onclick="validateService()">
+                            <option value="" selected disabled>--Select Your Need--</option>
+                            <option>Book an Event</option>
+                            <option>Pricing & Packages</option>
+                            <option>Equipments Used</option>
+                            <option>Other</option>
+                          </select>
+                          <span class="error-span" id="service-error"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label for="form_message">Message *</label>
+                          <textarea id="form_message" name="message" class="form-control"
+                            placeholder="Write your message here." rows="4" required="required"
+                            onkeyup="validateMessage()"></textarea>
+                          <span class="error-span" id="message-error"></span>
+                        </div>
+                      </div>
+                      <div class="col-md-12"> <span><button type="submit" id="submit-btn"
+                            class="btn btn-send pt-2 btn-block " onclick=" return validateSubmit()">Send Message <i
+                              class="fa-regular fa-paper-plane"></i></span></button>
+                        <span class="error-span text-center pt-2" id="submit-error"></span>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+
+              </div>
+            </div> <!-- /.8 -->
+          </div> <!-- /.row-->
+        </div>
       </div>
       <br>
       <br>
       <br>
     </section>
-  
+
   </div>
- 
+
   <!-- Sending Animaton -->
 
   <div id="loading-wrapper">
@@ -421,26 +560,104 @@
   </div>
 
   <footer id="footer">
-    <div class="container-fluid footer" data-cues="fadeIn" data-sort="random" data-duration=1000 >
+
+    <div class="container-fluid footer">
+      <div class="row footer-container">
+        <div class="col-lg-3 col-md-6">
+          <div>
+            <h5>Let's Work Together</h5>
+            <p>Memories are the only things that don’t change even when everything else in this world change. Let’s work
+              together to capture the memories of your special day for you to cherish forever.</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div>
+            <h5>Links</h5>
+            <ul class="footer-list">
+              <li><a href="#home" class="footer-links underline-anime first after">Home</a></li>
+              <li><a href="#about" class="footer-links underline-anime first after">About</a></li>
+              <li><a href="#gallery" class="footer-links underline-anime first after">Gallery</a></li>
+              <li><a href="#contact" class="footer-links underline-anime first after">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div>
+            <h5>Our Services</h5>
+            <ul class="footer-list">
+              <li><a href="#gallery" class="footer-links underline-anime first after">Wedding Photography</a></li>
+              <li><a href="gallery-links/events.html" class="footer-links underline-anime first after">Event
+                  Photography</a></li>
+              <li><a href="#gallery" class="footer-links underline-anime first after">Portrait Photography</a></li>
+              <li><a href="gallery-links/nature.html" class="footer-links underline-anime first after">Wildlife
+                  Photography</a></li>
+              <li><a href="gallery-links/albums.html" class="footer-links underline-anime first after">Editing</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div>
+            <h5>Contact</h5>
+            <ul class="footer-list">
+              <li>
+                <picture>
+                  <source srcset="img/jtj-dark.png" media="(prefers-color-scheme: light)">
+                  <img src="img/jtj.png" class="" height="100px" width="auto" alt="">
+                </picture>
+              </li>
+              <li><i class="fa-solid fa-location-dot"></i> JTJ Creations, Pandithitta
+                Thalavoor, Kollam, Kerala</li>
+              <li><i class="fa-solid fa-phone"></i> <a href="tel:+917594875686"
+                  class="footer-links underline-anime first after"> +91 7594875686, </a>
+                <a href="tel:+918921233481" class="footer-links underline-anime first after"> +91 8921233481</a>
+              </li>
+              <li><i class="fa-regular fa-envelope"></i> <a href="mailto:jtjcreations2020@gmail.com"
+                  class="footer-links underline-anime first after"> jtjcreations2020@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row copyright">
+        <div class="footer-icons-container col-12 text-center">
+          <span>Stay Conntected</span>
+          <a href="https://www.facebook.com/profile.php?id=100076379604525" class="footer-icons"><i
+              class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/jtjcreations_" class="footer-icons"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/917594906242?text=" class="footer-icons"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.youtube.com/channel/UCSGZLWjrl5dWbQuM_GJ0-9g" class="footer-icons"><i
+              class="fa-brands fa-youtube"></i></a>
+          <a href="mailto:jtjcreations2020@gmail.com" class="footer-icons"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <p class="mx-auto">Copyright &copy;
+          <script>document.write(new Date().getFullYear())</script> JTJ Creations. All Rights Reserved.
+        </p>
+      </div>
+    </div>
+    <!-- <div class="container-fluid footer">
       <div class="row">
         <div class="col-12">
           <p>
             Want to get in Touch? We'd Love to hear from you.<br>Here's how you can reach us.
-            <br>Phone No - <a href="tel:+917594875686" class="contact-description-mail underline-anime first after">+91 7594875686 ,</a>
+            <br>Phone No - <a href="tel:+917594875686" class="contact-description-mail underline-anime first after">+91
+              7594875686 ,</a>
             <a href="tel:+918921233481" class="contact-description-mail underline-anime first after">+91 8921233481</a>
           </p>
         </div>
       </div>
       <div class="row">
         <div class="col-12">
-          <a href="https://www.facebook.com/profile.php?id=100076379604525" class="footer-icons"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100076379604525" class="footer-icons"><i
+              class="fa-brands fa-facebook-f"></i></a>
           <a href="https://www.instagram.com/jtjcreations_" class="footer-icons"><i class="fab fa-instagram"></i></a>
           <a href="https://wa.me/917594906242?text=" class="footer-icons"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="mailto:jtjcreations2020@gmail.com" class="footer-icons"><i class="fa-solid fa-envelope"></i></a> <br><br>
-          <p>&copy; <script>document.write(new Date().getFullYear())</script> JTJ Creations. All rights reserved.</p>
+          <a href="mailto:jtjcreations2020@gmail.com" class="footer-icons"><i class="fa-solid fa-envelope"></i></a>
+          <br><br>
+          <p>&copy;
+            <script>document.write(new Date().getFullYear())</script> JTJ Creations. All rights reserved.
+          </p>
         </div>
       </div>
-    </div>
+    </div> -->
   </footer>
 
   <!-- side social-bar -->
@@ -482,26 +699,36 @@
       <i class="fa-solid fa-angle-right" title="Expand"></i>
     </div>
   </div>
-  
-  <div class="up-arrow" id="goto-top">
-    <a href="#home"><button class="btn"><i class="fas fa-arrow-up"></i></button></a>
+
+  <!-- goto top arrow button -->
+
+  <div class="up-arrow" id="goto-top" title="Back to Top">
+    <a href="#home" id="progress-value"><i class="fas fa-arrow-up"></i> </a>
   </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-       
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    
-    <script src="js/contact.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <script src="js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
 
-    <!-- scroll revel animations script -->
-    <script type="text/javascript" src="scrollCue/scrollCue.min.js"></script>
-    <script>scrollCue.init();</script>
+  <script src="js/contact.js"></script>
+
+  <script src="js/script.js"></script>
+
+  <!-- scroll revel animations script -->
+  <script type="text/javascript" src="scrollCue/scrollCue.min.js"></script>
+  <script>scrollCue.init();</script>
 </body>
+
 </html>

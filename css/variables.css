@@ -14,8 +14,10 @@
   --box-shadow-small: 2px 2px 6px #171a1e, -2px -2px 6px #1f2328;
   --font-family: 'Montserrat', sans-serif;
   --font-family-head: 'Cormorant Garamond', serif;
+  --footer-bg-clr: #2b2f35;
+  --logo-drop-shadow: 2px 2px 0.5rem #1f1f1f;
 
-  --blur-color: rgba(0, 0, 0, 0.116);
+  --blur-color: rgba(0, 0, 0, 0.2);
 }
 
 [data-theme='dark'] {
@@ -29,6 +31,8 @@
   --box-shadow-small: 2px 2px 6px #d1d5d9, -2px -2px 6px #ffffff;
   --font-family: 'Montserrat', sans-serif;
   --font-family-head: 'Crimson Text', serif;
+  --footer-bg-clr: #d7e2e9;
+  --logo-drop-shadow: 2px 2px 0.5rem #a1a1a1;
 
-  --blur-color: rgba(255, 255, 255, 0.116);
+  --blur-color: rgba(255, 255, 255, 0.2);
 }

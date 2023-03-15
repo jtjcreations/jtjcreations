@@ -7,6 +7,7 @@ const navBar = document.getElementById('header');
 // When the user scrolls down 500px from the top of the document, show the button
 window.onscroll = function () {
   scrollFunction();
+  calcScrollValue();
 };
 
 function scrollFunction() {
@@ -125,3 +126,26 @@ $(document).ready(function () {
     $('#icon-side').hide(), $('#show-sidebar').show();
   });
 });
+
+//scrollprogress on goto top button
+
+let calcScrollValue = () => {
+  let scrollProgress = document.getElementById('goto-top');
+  let sidediv = document.getElementById('side-bar');
+  let pos = document.documentElement.scrollTop;
+  let calcHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  let scrollValue = Math.round((pos * 100) / calcHeight);
+  if (pos > 600) {
+    scrollProgress.style.display = 'grid';
+    sidediv.style.display = 'block';
+  } else {
+    scrollProgress.style.display = 'none';
+    sidediv.style.display = 'none';
+  }
+  scrollProgress.style.background = `conic-gradient(var(--color-secondary) ${scrollValue}%, var(--bg-body) ${scrollValue}%)`;
+};
+
+// window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;
