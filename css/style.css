@@ -268,14 +268,14 @@
 .gallery-p {
   margin: min(2rem, 2vw) 0;
   line-height: 2rem;
-  position: relative;
   isolation: isolate;
+  position: relative;
 }
 
 .gallery-p::before {
   content: open-quote;
   position: absolute;
-  top: 70%;
+  top: 30%;
   opacity: 0.1;
   z-index: -1;
   color: var(--color-secondary);
